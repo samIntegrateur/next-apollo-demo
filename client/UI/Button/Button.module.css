@@ -1,0 +1,29 @@
+.button {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border: var(--button-border);
+  color: var(--button-color);
+  background-color: var(--button-bg);
+  padding: var(--button-padding);
+  border-radius: var(--button-border-radius);
+  box-shadow: var(--button-box-shadow);
+  transition: var(--button-transition);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+
+  &:hover {
+     border-color: var(--button-border-color-hover);
+     color: var(--button-color-hover);
+     background-color: var(--button-bg-hover);
+  }
+}
+
+
+.buttonFullOnSm {
+  width: 100%;
+
+    @media (--min-width-md) {
+      width: auto;
+    }
+}

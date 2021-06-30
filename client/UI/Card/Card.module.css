@@ -1,0 +1,21 @@
+.card {
+  display: block;
+  border: var(--card-border);
+  color: var(--card-color);
+  background-color: var(--card-bg);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-box-shadow);
+}
+
+.card__title {
+  color: var(--card-title-color);
+  font-size: var(--card-title-font-size-sm);
+  font-weight: var(--card-title-font-weight);
+  margin-top: 0;
+  margin-bottom: var(--card-title-margin);
+
+  @media (--min-width-md) {
+    font-size: var(--card-title-font-size);
+  }
+}

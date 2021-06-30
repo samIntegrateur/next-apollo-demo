@@ -1,0 +1,22 @@
+.container {
+  width: var(--container-width);
+  max-width: 100%;
+  margin: 0 auto;
+  padding: var(--container-padding-sm-y) var(--container-padding-sm-x);
+}
+
+@media (--min-width-md) {
+  .container {
+    padding: var(--container-padding-y) var(--container-padding-x);
+  }
+}
+
+.containerSmallPadding {
+  padding-top: var(--container-small-padding-sm-y);
+  padding-bottom: var(--container-small-padding-sm-y);
+
+  @media (--min-width-md) {
+    padding-top: var(--container-small-padding-y);
+    padding-bottom: var(--container-small-padding-y);
+  }
+}

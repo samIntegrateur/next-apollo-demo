@@ -1,0 +1,15 @@
+.peopleList,
+.peopleList__item {
+  display: block;
+  list-style: none;
+  padding: 0;
+}
+
+.peopleList {
+  display: block;
+  list-style: none;
+}
+
+.peopleList__item:not(:last-child) {
+  margin-bottom: var(--space-md);
+}
